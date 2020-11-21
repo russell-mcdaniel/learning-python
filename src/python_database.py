@@ -19,7 +19,5 @@ with pyodbc.connect(connection_string) as connection:
         for row in rows:
             print(str(row[0]), str(row[1]))
 
-max_cursors = connection.getinfo(pyodbc.SQL_MAX_CONCURRENT_ACTIVITIES)
-print(f'The maximum cursors supported per connection is {max_cursors}.')
-
-connection.close()
+    max_cursors = connection.getinfo(pyodbc.SQL_MAX_CONCURRENT_ACTIVITIES)
+    print(f'The maximum cursors supported per connection is {max_cursors}.')
