@@ -1,2 +1,3 @@
-# learning-python
-A learning project for Python
+# Learning Python
+
+A learning project for Python.
